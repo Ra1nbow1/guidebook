@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Romanoff | Guidebook</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="barcode.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<script type="text/javascript">
+      
+    
+if(document.addEventListener){
+  document.addEventListener("DOMContentLoaded", function(){
+    loaded();
+  });
+} else if(document.attachEvent){
+  document.attachEvent("onreadystatechange", function(){
+    loaded();
+  });
+}
+
+function loaded(){
+  
+  setInterval(loop, 250);
+
+}
+
+var x = 0;
+ var titleText = ["Romanoff | Guidebook", "Romanoff | Guideboo", "Romanoff | Guidebo", "Romanoff | Guideb", "Romanoff | Guide", "Romanoff | Guid", "Romanoff | Gui", "Romanoff | Gu", "Romanoff | G", "Romanoff | ", "Romano", "Roman", "Roma", "Rom", "Ro", "R", "Ro", "Rom", "Roma", "Roman", "Romano", "Romanof", "Romanoff", "Romanoff |", "Romanoff | G", "Romanoff | Gu", "Romanoff | Gui", "Romanoff | Guid", "Romanoff | Guide", "Romanoff | Guideb", "Romanoff | Guidebo", "Romanoff | Guideboo", "Romanoff | Guidebook"];
+//var titleText = ["Romanoff", "Romanof", "Romano", "Roman", "Roma", "Rom", "Ro", "R", "Ro", "Rom", "Roma", "Roman", "Romano", "Romanof","Romanoff",];
+
+// "Romanoff | Social media", "Romanoff | Social medi", "Romanoff | Social med", "Romanoff | Social me", "Romanoff | Social m", "Romanoff | Social", "Romanoff | Socia", "Romanoff | Soci", "Romanoff | Soc", "Romanoff | So", "Romanoff | S", "Romanoff |",  "Romanoff |", "Romanoff | S", "Romanoff | So", "Romanoff | Soc", "Romanoff | Soci", "Romanoff | Socia", "Romanoff | Social", "Romanoff | Social m", "Romanoff | Social me", "Romanoff | Social med", "Romanoff | Social medi", "Romanoff | Social media" 
+
+function loop(){
+
+  document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+
+}
+
+    </script>
+
+  <div class="container">
+  <h1 class="center"> Romanoff | Guidebook</h1>
+  
+  <article class="episode">
+    <div class="episode__number">00</div>
+    <div class="episode__content">
+      <div class="title">Это что?</div>
+      <div class="story">
+        <p>Привет! Это страница с ответами на вопросы по веб-разработке, которые возникли у участников <a href="/rbs/index.html">Rainbow`s Server</a>. Большинство вопросов довольно простые.</p>
+        <p>Статьи добавляются по мере возникновения новых вопросов в канале на сервере. Появился вопрос - напиши его. Возможно, его добавят в скором времени.</p>
+        <p>Да, поиска нет. Ctrl + F в помощь. Возможно, он будет добавлен в будущем.</p>
+      </div>
+    </div>
+  </article>
+  
+  <article class="episode">
+    <div class="episode__number">01</div>
+    <div class="episode__content">
+      <div class="title">Как изменить размер кнопки</div>
+      <div class="story">
+        <p><sup><strong>Автор: RA1NBOW</strong></sup></p>
+          <code>
+          <span>button</span> {
+            <em>background</em>: #000;
+            <em>padding</em>: 10px;
+          }
+
+        </code>
+        </p>
+      </div>
+    </div>
+  </article>
+  
+  <article class="episode">
+    <div class="episode__number">02</div>
+    <div class="episode__content">
+      <div class="title">Как изменить расстояние между символами</div>
+      <div class="story">
+        <p><sup><strong>Автор: GeorgeKryptonian</strong></sup></p>
+        <p>
+          
+          <code>
+            <span>div</span> { <em>letter-spacing</em>: 5px; }
+          </code>
+
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode__number">03</div>
+    <div class="episode__content">
+      <div class="title">Как изменить стили для темной системной темы</div>
+      <div class="story">
+        <p><sup><strong>Автор: RA1NBOW</strong></sup></p>
+        <p>
+          
+          <code>
+            <span>@media</span> (prefers-<em>color</em>-scheme: dark) { ... }
+          </code>
+
+        </p>
+      </div>
+    </div>
+  </article>
+  
+</div>
+  <h3 class="center"><a href="/index.html">Главная страница</a></h3>
+</body>
+</html>
