@@ -5,8 +5,23 @@
   <title>Romanoff | Guidebook</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" type="image/x-icon" href="barcode.ico">
+  <meta name="description" content="CSS is fantastic!">
+  <meta name="og:image" content="/guidebook.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
+<style>
+  
+::selection {
+  background: #282B28; /* WebKit/Blink Browsers */
+  color: #D36135;
+}
+::-moz-selection {
+  background: #fff; /* Gecko Browsers */
+}
+
+</style>
+
 <body>
 
 <script type="text/javascript">
@@ -50,8 +65,7 @@ function loop(){
     <div class="episode__content">
       <div class="title">Это что?</div>
       <div class="story">
-        <p>Привет! Это страница с ответами на вопросы по веб-разработке, которые возникли у участников <a href="/rbs/index.html">Rainbow`s Server</a>. Большинство вопросов довольно простые.</p>
-        <p>Статьи добавляются по мере возникновения новых вопросов в канале на сервере. Появился вопрос - напиши его. Возможно, его добавят в скором времени.</p>
+        <p>Привет! Это страница с ответами на вопросы по веб-разработке. Контент рассчитан на новичков.</p>
         <p>Да, поиска нет. Ctrl + F в помощь. Возможно, он будет добавлен в будущем.</p>
       </div>
     </div>
@@ -60,9 +74,8 @@ function loop(){
   <article class="episode">
     <div class="episode__number">01</div>
     <div class="episode__content">
-      <div class="title">Как изменить размер кнопки</div>
+      <div class="title">Размер кнопки</div>
       <div class="story">
-        <p><sup><strong>Автор: RA1NBOW</strong></sup></p>
           <code>
           <span>button</span> {
             <em>background</em>: #000;
@@ -78,9 +91,8 @@ function loop(){
   <article class="episode">
     <div class="episode__number">02</div>
     <div class="episode__content">
-      <div class="title">Как изменить расстояние между символами</div>
+      <div class="title">Расстояние между символами</div>
       <div class="story">
-        <p><sup><strong>Автор: GeorgeKryptonian</strong></sup></p>
         <p>
           
           <code>
@@ -95,9 +107,8 @@ function loop(){
   <article class="episode">
     <div class="episode__number">03</div>
     <div class="episode__content">
-      <div class="title">Как изменить стили для темной системной темы</div>
+      <div class="title">Стили для темной системной темы</div>
       <div class="story">
-        <p><sup><strong>Автор: RA1NBOW</strong></sup></p>
         <p>
           
           <code>
@@ -108,8 +119,41 @@ function loop(){
       </div>
     </div>
   </article>
+
+  <article class="episode">
+    <div class="episode__number">04</div>
+    <div class="episode__content">
+      <div class="title">Плавность по наведению и наоборот для элемента</div>
+      <div class="story">
+        <p>
+          
+          <code>
+            <span>selector</span>:not(:hover) { <em>transition</em>: 1s; }
+          </code>
+
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode__number">05</div>
+    <div class="episode__content">
+      <div class="title">Цвет выделения текста</div>
+      <div class="story">
+        <p>
+          
+          <code>
+            ::selection { <em>color</em>: #00ff00; }
+            ::<em>-moz-</em>selection { <em>color</em>: #00ff00;}
+          </code>
+
+        </p>
+      </div>
+    </div>
+  </article>
   
 </div>
-  <h3 class="center"><a href="/index.html">Главная страница</a></h3>
+  <h3 class="center"><a href="/index.php">Главная страница</a></h3>
 </body>
 </html>
